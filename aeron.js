@@ -121,7 +121,7 @@ reply('_Kirim gambar/video dengan caption !sticker/ reply gambar/video dengan pe
 }
 } catch (e) {
 console.log(colors.red(e))
-reply("_Maaf error, coba lagi dengan reply gambar/video dengan caption !sticker, *jika tetap terjadi lapor ke owner bot*_")
+reply("_Maaf error, coba lagi dengan reply gambar/video dengan caption !sticker, *jika tetap terjadi lapor ke bot*_")
 }
 break
 case 'covid':
@@ -268,20 +268,14 @@ case 'owner':
 const vcard = 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n' 
 + 'FN:ԾЩ刀乇尺\n'
-+ 'TEL;type=CELL;type=VOICE;waid=6285648294105:+62 856 4829 4105\n'
++ 'TEL;type=CELL;type=VOICE;waid=6285217234457:+62 852 1723 4457\n'
 + 'END:VCARD';
 const sentMsg  = await aeron.sendMessage(from, { contacts: { contacts: [{ vcard }] }});
 break
 case 'donasi':
 case 'donate':
-const donasi =`
-•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•
-
-*Indosat* 0856-4829-4105
-*Dana* 0856-4829-4105
-*Gopay* 0856-4829-4105
-
-•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•
+const donasi =`*
+Kami tidak meminta donasi, Silahkan gunakan bot ini dengan bijak!*
 `
 reply(donasi)
 break
